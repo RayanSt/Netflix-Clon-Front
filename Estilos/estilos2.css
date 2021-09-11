@@ -1,0 +1,75 @@
+body{
+    background-color: #333;
+    margin: 0px 0px 0px;
+    padding: 0px 0px 0px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+body > div#uno{
+    /*Se uso un generador de degradados */ 
+    background-image: radial-gradient(circle, rgba(0,0,0,0.3211659663865546) 2%, rgba(0,0,0,0.8309698879551821) 86%), url(recursos/fondo-carta1.jpg);;
+    background-size: cover;
+    padding-bottom: 5rem;
+}
+
+div.CabeceraMargen{
+    padding-top: 20px;
+}
+div.Cabecera{
+    margin:0 3.5rem ;
+    display: flex;
+    align-items: flex-start;
+    padding-top: .5rem;
+    height: auto;
+}
+div.CabeceraImg{
+    flex: 1 auto;
+}
+div.Cabecera > div.CabeceraImg >img  {
+    width: auto;
+    height: 3rem;
+    padding-top: 0;
+
+}
+div.Cabecera > select{
+    margin-top: 5px;
+    height: 2rem;
+    font-size: 0.75rem;
+    border-radius: 2px;
+    border-color: white;
+    color: white;
+    padding-left: 1.375rem;
+    padding-right: 0.4rem;
+    margin-right: 1.25rem;
+    background-color: #000;
+}
+div.Cabecera > a {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem;
+    margin-top: 5px;
+    background-color: red;
+    border-radius: 2px;
+    color: white;
+}
+div.info{
+    padding: 5rem 3.5rem;
+    position: relative;
+    font-size: 1.25rem;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+div.info > div.input >input{
+    padding-right: 0px;
+    height: 2.7rem;
+    color: gray;
+}
+div.info > div.input > a {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+    margin-top: 5px;
+    background-color: red;
+    line-height: normal;
+    font-weight: 400;
+}
