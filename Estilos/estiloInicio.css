@@ -1,0 +1,151 @@
+:root{
+  --color_Fondo: #141414;
+  --color_Logo: #E50914;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--color_Fondo);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+.section_header{
+  padding: 13px 0px;
+}
+
+.section_header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section_header .logo{
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
+  color: var(--color_Logo);
+  font-size: 50px;
+}
+
+.section_header .navegacion a{
+  color: #AAA;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.section_header .navegacion a:hover,
+.section_header .navegacion a.seleccionado{
+  color: #FFF;
+}
+
+
+.pelicula_Fondo .container{
+  margin: 0 auto;
+  margin-bottom: 6.25em;
+}
+
+.pelicula_Fondo{
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #FFF;
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(../Imagenes/Imagenes\ Pagina\ Principal/backdrop.jpeg);
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: end;
+}
+
+.pelicula_Fondo .titulo{
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+
+.pelicula_Fondo .descripcion{
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 60%;
+  margin-bottom: 1.25em;
+}
+
+.pelicula_Fondo .boton{
+  background: rgba(0, 0, 0, .50);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #FFF;
+  margin-right: 1.25em;
+
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1.12em;
+}
+
+.pelicula_Fondo .boton:hover{
+  background: #FFF;
+  color: #000;
+}
+
+.pelicula_Fondo .boton i{
+  margin-right: 1.25em;
+}
+
+
+
+.peliculas_Recomendadas{
+  margin: 70px;
+}
+
+.peliculas_Recomendadas .contenedor_Peliculas{
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.contenedor-titulo{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.contenedor-titulo h3{
+  color: #FFF;
+  font-size: 30px;
+}
+
+
+
+.peliculas_Recomendadas .contenedor-fila{
+  width: 100%;
+  padding: 20px 0px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.peliculas_Recomendadas .contenedor-fila .fila{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.peliculas_Recomendadas .contenedor-fila .fila .pelicula{
+  min-width: 20%;
+  transition: .3s ease all;
+  box-shadow: 5px 10px rgba(0, 0, 0, .30);
+}
+
+.peliculas_Recomendadas .contenedor-fila .fila .pelicula img{
+  width: 100%;
+  vertical-align: top;
+}
