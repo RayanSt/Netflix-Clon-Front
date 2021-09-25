@@ -29,6 +29,8 @@ body{
   align-items: center;
 }
 
+/*Barra de Navegación y Logo*/
+
 .section_header .logo{
   font-family: 'Bebas Neue', cursive;
   font-weight: normal;
@@ -47,6 +49,7 @@ body{
   color: #FFF;
 }
 
+/*Fondo principal de la página*/
 
 .pelicula_Fondo .container{
   margin: 0 auto;
@@ -101,18 +104,7 @@ body{
   margin-right: 1.25em;
 }
 
-
-
-.peliculas_Recomendadas{
-  margin: 70px;
-}
-
-.peliculas_Recomendadas .contenedor_Peliculas{
-  display: flex;
-  align-items: center;
-
-  position: relative;
-}
+/*Carrilles de peliculas según la sección*/
 
 .contenedor-titulo{
   display: flex;
@@ -125,27 +117,86 @@ body{
   font-size: 30px;
 }
 
+.peliculas_Muestra{
+  margin: 70px;
+}
 
+.peliculas_Muestra .contenedor-Peliculas{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
-.peliculas_Recomendadas .contenedor-fila{
+.peliculas_Muestra .contenedor-Peliculas .flecha-izq, 
+.peliculas_Muestra .contenedor-Peliculas .flecha-der{
+  position: absolute;
+  border: none;
+  background:rgba(0, 0, 0, .30) ;
+  font-size: 40px;
+  height: 50%;
+  top: calc(50%-25%);
+  line-height: 40px;
+  width: 50px;
+  color: #FFF;
+  cursor: pointer;
+  z-index: 500;
+  transition: .2s ease all;
+}
+
+.peliculas_Muestra .contenedor-Peliculas .flecha-izq:hover, 
+.peliculas_Muestra .contenedor-Peliculas .flecha-der:hover{
+  background: rgba(0, 0, 0, .90);
+}
+
+.peliculas_Muestra .contenedor-Peliculas .flecha-izq{
+  left: 0;
+}
+
+.peliculas_Muestra .contenedor-Peliculas .flecha-der{
+  right: 0;
+}
+
+.peliculas_Muestra .contenedor-fila{
   width: 100%;
   padding: 20px 0px;
   overflow: hidden;
   scroll-behavior: smooth;
 }
 
-.peliculas_Recomendadas .contenedor-fila .fila{
+.peliculas_Muestra .contenedor-fila .fila{
   display: flex;
   flex-wrap: nowrap;
 }
 
-.peliculas_Recomendadas .contenedor-fila .fila .pelicula{
+.peliculas_Muestra .contenedor-fila .fila .pelicula{
   min-width: 20%;
   transition: .3s ease all;
   box-shadow: 5px 10px rgba(0, 0, 0, .30);
 }
 
-.peliculas_Recomendadas .contenedor-fila .fila .pelicula img{
+.peliculas_Muestra .contenedor-fila .fila .pelicula img{
   width: 100%;
   vertical-align: top;
+}
+
+/*Media Queries para el responsive*/
+
+@media screen and (max-width: 800px){
+  .section_header .logo{
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .section_header .container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pelicula_Fondo {
+    font-size: 14px;
+  }
+
+  .pelicula_Fondo .descripcion{
+    max-width: 100%;
+  }
 }

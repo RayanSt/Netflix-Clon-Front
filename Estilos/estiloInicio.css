@@ -21,6 +21,9 @@ div.Cabecera{
     padding-top: .5rem;
     height: auto;
 }
+.input .input_boton{
+    color: #000;
+}
 div.CabeceraImg{
     flex: 1 auto;
 }
