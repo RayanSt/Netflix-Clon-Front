@@ -194,7 +194,7 @@ nav .signin:hover, .btn:hover {
 }
 
 #features #watchanywhere p {
-  color: #999;
+  color: rgb(0, 0, 0);
 }
 
 #features #pickprice h2 {
@@ -210,11 +210,13 @@ table {
 
 table, thead, tbody {
   border-collapse: collapse;
+  margin-left: 20%;
 }
 
 thead {
-  color: white;
+  color: rgb(241, 0, 0);
   font-size: 16px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -223,7 +225,7 @@ thead th {
 }
 
 tbody {
-  color: #999;
+  color: rgb(0, 0, 0);
 }
 
 tbody td {
@@ -232,7 +234,7 @@ tbody td {
 }
 
 tbody tr:nth-child(2n) {
-  background-color: #222;
+  background-color: rgb(255, 255, 255);
 }
 
 tbody td:first-child {
