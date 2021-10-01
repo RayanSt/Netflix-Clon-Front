@@ -17,7 +17,7 @@ div.Carta{
 }
 body > div#uno{
     /*Se uso un generador de degradados */ 
-    background-image: radial-gradient(circle, rgba(0,0,0,0.3211659663865546) 2%, rgba(0,0,0,0.8309698879551821) 86%), url(imagenesPaginaInicio/fondo-carta1.jpg);
+    background-image: radial-gradient(circle, rgba(0,0,0,0.3211659663865546) 2%, rgba(0,0,0,0.8309698879551821) 86%), url(ImagenesPaginaInicio/fondo-carta1.jpg);
     background-size: cover;
     padding-bottom: 5rem;
 }
