@@ -1,8 +1,19 @@
 body{
     background-color: #333;
-    margin: 0px 0px 0px;
-    padding: 0px 0px 0px;
+    margin: 0px 0px ;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+div.Carta{
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 50px 5%;
+    font-size: 1.25rem;
+    text-align: left;
 }
 body > div#uno{
     /*Se uso un generador de degradados */ 
@@ -17,12 +28,9 @@ div.CabeceraMargen{
 div.Cabecera{
     margin:0 3.5rem ;
     display: flex;
-    align-items: flex-start;
+    align-items:center;
     padding-top: .5rem;
     height: auto;
-}
-.input .input_boton{
-    color: #000;
 }
 div.CabeceraImg{
     flex: 1 auto;
@@ -31,29 +39,36 @@ div.Cabecera > div.CabeceraImg >img  {
     width: auto;
     height: 3rem;
     padding-top: 0;
+}
 
+div.Cabecera > div.IdiomaSel > img
+{    
+    height: 1rem;
 }
 div.Cabecera > select{
-    margin-top: 5px;
+    background: black;
     height: 2rem;
     font-size: 0.75rem;
-    border-radius: 2px;
-    border-color: white;
     color: white;
-    padding-left: 1.375rem;
+    border: 1px solid white;
+    border-radius: 4px;
     padding-right: 0.4rem;
-    margin-right: 1.25rem;
-    background-color: #000;
+    margin-right: 1.5rem;
 }
-div.Cabecera > a {
+div.imgS > img{
+    width: fit-content;
+    overflow:hidden;
+}
+a{
     font-size: 0.9rem;
     padding: 0.5rem 0.5rem;
-    margin-top: 5px;
     background-color: red;
     border-radius: 2px;
     color: white;
 }
 div.info{
+    display: flex;
+    flex-direction: column;
     padding: 5rem 3.5rem;
     position: relative;
     font-size: 1.25rem;
@@ -62,17 +77,135 @@ div.info{
     text-align: center;
     color: white;
 }
+h1{
+    font-size: 3.5rem;
+}
 
-div.info > div.input >input{
-    padding-right: 0px;
+div.desc>h1{
+    font-size: 3.5rem;
+}
+div.infoS>h1{
+    font-size: 3.1rem;
+}
+div.infoS>p{
+    font-size: 1.6rem;
+}
+div.input{
+    display: table;
+}
+
+
+input{
     height: 2.7rem;
+    width: 20rem;
     color: gray;
 }
-div.info > div.input > a {
+a.Comenzar {
     font-size: 0.9rem;
-    padding: 1rem 0.5rem;
-    margin-top: 5px;
+    padding: 1rem 3rem;
     background-color: red;
     line-height: normal;
     font-weight: 400;
+}
+
+div.desc{
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+div#Preguntas.desc{
+    display: flex !important;
+    flex-direction: column;
+}
+.accordion {
+    background-color: #303030;
+    margin: 0 auto;
+    color: #FFFF;
+    cursor: pointer;
+    padding: 18px;
+    max-width: 815px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.5rem;
+    transition: 0.4s;
+  }
+    
+  .accordion:after {
+    content: "+";
+    color: #FFFF;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "x";
+  }
+  
+  .panel {
+    margin-top: 0.1rem;
+    margin-bottom: 0.3rem;
+    background-color: #303030;
+    color: #FFFF;
+    max-width: 815px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .panel > p{
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+  div#Preguntas.desc > h1{
+    text-align: center;
+}
+div#Preguntas.desc > h3{
+    font-size: 1.15rem;
+    text-align: center;
+}
+div#Footer.Carta > h5{
+    font-size: 1rem;
+}
+div#Footer.Carta{
+    padding-left: 12rem;
+    color: #757575;
+    font-size: 0.9rem;
+}
+td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+select.selIdiomMed{
+    background: black;
+    height: 3rem;
+    width: 5rem;
+    font-size: 0.75rem;
+    color: #757575;
+    border: 1px solid #757575;
+    border-radius: 1px;
+    padding-right: 0.4rem;
+    margin-right: 1.5rem;
+}
+@media (max-width: 950px) {
+    H1{
+        text-align: center;
+    }
+    div.infoS>p{
+        text-align: center;
+    }
+    div.input{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    div#ninv{
+        flex-direction: column;
+    }
+    div#inv{
+        flex-direction: column-reverse;
+    }
 }
